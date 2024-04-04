@@ -18,6 +18,9 @@ public class Person {
   public Person() {
 
   }
+  public Person(String name, String location, String birthDate) {
+    this(-1, name, location, birthDate);
+  }
 
   public Person(int id, String name, String location, String birthDate) {
     this.id = id;
@@ -60,7 +63,7 @@ public class Person {
 
   @Override
   public String toString() {
-    return "Person{" +
+    return "\nPerson{" +
         "id=" + id +
         ", name='" + name + '\'' +
         ", location='" + location + '\'' +
